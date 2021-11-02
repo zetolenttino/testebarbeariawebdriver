@@ -10,4 +10,12 @@ export default class Page {
     open (path: string) {
         return browser.url(`https://zetolenttino.github.io/barbearia/${path}`)
     }
+
+    desktop() {
+        browser.setWindowSize(1024, 768)
+    }
+    mobile() {
+        browser.setWindowSize(411, 731)
+    }
+
 }

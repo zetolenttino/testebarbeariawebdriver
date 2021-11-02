@@ -1,11 +1,15 @@
 import Page from './page';
 
 class InicioPage extends Page {
-    get linkDeProdutos () { 
-        return $('a[href="produtos.html"]') 
+    get linkDeProdutos() {
+        return $('a[href="produtos.html"]')
     }
 
-    open () {
+    get mapaInicio() {
+        return $('.mapa-conteudo')
+    }
+
+    open() {
         return super.open('');
     }
 }
